@@ -49,8 +49,11 @@ header {
     .underLine {
       border-bottom: 3px solid #282766;
     }
-    .iconColorP {
-      color: #282766;
-    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 900px) {
+  .nav {
+    align-items: center;
   }
 }
