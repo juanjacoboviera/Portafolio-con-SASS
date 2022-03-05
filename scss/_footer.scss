@@ -52,4 +52,19 @@ footer {
     padding-right: 20px;
     margin-bottom: 0px;
   }
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    .footer-redesSociales {
+      grid-column: 3/4;
+      grid-row: 1/2;
+    }
+
+    .footer-redesSociales p {
+      display: none;
+    }
+
+    .footer-legales {
+      grid-column: 1/4;
+      grid-row: 2/4;
+    }
+  }
 }

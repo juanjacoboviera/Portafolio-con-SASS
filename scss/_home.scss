@@ -167,16 +167,164 @@ main {
       align-content: end;
     }
   }
-}
 
-@media (max-width: 900px) {
-  h1 {
-    font-size: 2.5em;
+  @media (max-width: 1024px) {
+    .seccion1 {
+      grid-template-columns: 1fr;
+      height: 90vh;
+      padding-top: 0;
+
+      overflow: visible;
+      position: static;
+      /*
+        align-items: center;
+        justify-items: center;
+        */
+      .seccion1-textos {
+        align-items: center;
+        padding: 0;
+        justify-content: space-evenly;
+      }
+
+      .seccion1-img {
+        align-content: center;
+      }
+
+      .seccion1-img img {
+        position: static;
+        transform: none;
+        width: 700px;
+      }
+    }
+    .seccion3-contenedor {
+      height: auto;
+      .seccion3 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        padding: 20px;
+        gap: 30px;
+        align-items: center;
+        justify-items: center;
+        height: auto;
+      }
+
+      .seccion3-boton {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 0;
+      }
+
+      .seccionPosicion-end {
+        place-self: end;
+      }
+
+      .seccionPosicion-start {
+        place-self: start;
+      }
+    }
   }
+  @media screen and (min-width: 768px) and (max-width: 900px) {
+    .seccion1 {
+      h1 {
+        font-size: 2.5em;
+        text-align: center;
+      }
 
-  .seccion1-img {
-    img {
-      width: 90%;
+      h3 {
+        font-size: 1.5em;
+        font-weight: 200;
+      }
+      .seccion1-img {
+        img {
+          width: 80%;
+        }
+      }
+    }
+    .seccion2 {
+      grid-template-columns: 1fr;
+      height: auto;
+      .seccion2-textos {
+        text-align: center;
+        padding: 40px 0;
+      }
+
+      .seccion2-textos h2 {
+        text-align: center;
+      }
+
+      .seccion2-textos p {
+        padding: 0 15%;
+      }
+    }
+  }
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    .seccion1 {
+      h1 {
+        font-size: 2.5em;
+        text-align: center;
+      }
+
+      h3 {
+        font-size: 1.5em;
+        font-weight: 200;
+      }
+      .seccion1-img img {
+        width: 100%;
+      }
+
+      .seccion1-textos {
+        justify-content: center;
+      }
+    }
+    .seccion2 {
+      grid-template-columns: 1fr;
+      height: auto;
+      .seccion2-img img {
+        width: 200px;
+        height: 230px;
+        padding-top: 20px;
+      }
+
+      .seccion2-textos {
+        text-align: center;
+        padding-right: 0;
+      }
+
+      .seccion2-textos h2 {
+        text-align: center;
+      }
+
+      .seccion2-textos p {
+        padding: 0 5%;
+      }
+    }
+    .seccion3-contenedor {
+      .seccion3 {
+        grid-template-columns: 1fr;
+
+        .seccionPosicion-end {
+          place-self: unset;
+          display: contents;
+        }
+
+        .seccionPosicion-start {
+          place-self: unset;
+          display: contents;
+        }
+
+        .seccion3-card {
+          width: 75%;
+        }
+      }
+    }
+    .seccion4 {
+      grid-template-columns: 1fr;
+      .seccion4-img {
+        display: none;
+      }
     }
   }
 }
