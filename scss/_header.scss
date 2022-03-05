@@ -1,0 +1,56 @@
+header {
+  .logo {
+    display: flex;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    background-color: white;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    transition: transform 0.4s linear;
+
+    &:hover {
+      transform: translatey(-5px);
+    }
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    /* display: inline;*/
+    font-weight: 300;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+
+    &:hover {
+      color: #282766;
+    }
+
+    li {
+      display: inline;
+      padding: 1em;
+    }
+
+    a {
+      text-decoration: none;
+      color: #3b3b3b;
+    }
+
+    .navbar-nav {
+      align-items: baseline;
+    }
+
+    .navbar-collapse {
+      justify-content: end;
+    }
+
+    .underLine {
+      border-bottom: 3px solid #282766;
+    }
+    .iconColorP {
+      color: #282766;
+    }
+  }
+}
