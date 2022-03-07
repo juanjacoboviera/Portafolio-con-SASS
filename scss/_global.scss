@@ -2,10 +2,10 @@ body {
   font-family: "Montserrat", sans-serif;
   color: #646464;
   margin: 0;
-  background-color: #fff;
+  background-color: $colorFondo;
 
   h1 {
-    color: #282766;
+    color: $colorTitulos;
     font-size: 4.2em;
     font-weight: 800;
   }
