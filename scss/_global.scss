@@ -8,24 +8,37 @@ body {
 
   h1 {
     color: $colorTitulos;
+    /*
     font-size: 4.2em;
+    font-weight: 800;
+    */
+    @extend .pesoh1;
+  }
+
+  .pesoh1 {
     font-weight: 800;
   }
 
   h2 {
     color: #282766;
+    /*
     font-size: 2em;
+    */
     font-weight: 800;
     margin-bottom: 30px;
   }
 
   h3 {
+    /*
     font-size: 1.5em;
+    */
     font-weight: 200;
   }
 
   h4 {
+    /*
     font-size: 1em;
+    */
     font-weight: 600;
   }
 
@@ -125,3 +138,20 @@ body {
   height: $altura;
   background-color: $color;
 }
+
+/* Maps */
+
+$font-size-titles: (
+  h1: 4.2em,
+  h2: 2em,
+  h3: 1.5em,
+  h4: 1em,
+);
+
+@each $tag, $size in $font-size-titles {
+  #{$tag} {
+    font-size: $size;
+  }
+}
+
+/* Extend */
