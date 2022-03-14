@@ -118,10 +118,10 @@ body {
 
 /* Mixins */
 
-@mixin grilla1($color: "") {
+@mixin grilla1($color, $padding, $altura) {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 20px;
-  height: 550px;
+  padding: $padding;
+  height: $altura;
   background-color: $color;
 }

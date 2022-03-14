@@ -44,20 +44,7 @@ main {
   }
 
   .seccion2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 20px;
-    height: 550px;
-    background-color: #f1f5f8;
-    /*
-            align-items: center;
-            justify-items: center;
-            */
-
-    .seccion2-fondoWhite {
-      background-color: #fff;
-      padding-top: 0;
-    }
+    @include grilla1($colorFondo2, $paddingGlobal, 550px);
 
     .seccion2-textos {
       display: flex;
