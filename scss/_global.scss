@@ -1,3 +1,5 @@
+/* Estilos globales */
+
 body {
   font-family: "Montserrat", sans-serif;
   color: #646464;
@@ -112,4 +114,14 @@ body {
     }
     */
   }
+}
+
+/* Mixins */
+
+@mixin grilla1($color: "") {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px;
+  height: 550px;
+  background-color: $color;
 }
