@@ -256,6 +256,10 @@ main {
         font-size: 1.5em;
         font-weight: 200;
       }
+      .seccion1-img {
+        justify-content: flex-start;
+      }
+
       .seccion1-img img {
         width: 100%;
       }
@@ -268,14 +272,15 @@ main {
       grid-template-columns: 1fr;
       height: auto;
       .seccion2-img img {
-        width: 200px;
+        width: 210px;
         height: 230px;
-        padding-top: 20px;
+        margin-top: 30px;
       }
 
       .seccion2-textos {
         text-align: center;
         padding-right: 0;
+        margin-bottom: 30px;
       }
 
       .seccion2-textos h2 {
@@ -306,7 +311,9 @@ main {
       }
     }
     .seccion4 {
+      display: block;
       grid-template-columns: 1fr;
+      padding: 0px;
       .seccion4-img {
         display: none;
       }
